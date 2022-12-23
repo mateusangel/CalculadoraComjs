@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:cadetblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.calculadora{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px 1px black;
+    text-align: center;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+   
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    moz-appearance: textfield;
+   appearance: textfield;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-right:10px;
+    text-align: end;
+    font-size: 30px;
+    background-color: rgba(59, 59, 59, 0.555);
+    
+
+}
+
+li{
+    
+    list-style-type: none;
+}
+
+:where(.p1,.p2,.p3,.p4,.p5){
+
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70px;
+        
+ }
+
+ :where(.p1  button,.p2  button,.p3  button,.p4  button,.p5  button){
+    width:100px ;
+    height: 40px;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: rgba(59, 59, 59, 0.555);
+    margin-left: 2px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 2px;
+ }
+
+ .igual{
+    left: 429px;
+    width: 60px;
+    top: 64px;
+    height: 210px;
+    position: absolute;
+    display: table-cell;
+    display: grid;
+    align-items: center;
+    background-color: rgba(59, 59, 59, 0.555);
+ }
+
+ button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.986);
+ }
+
+.zero{
+    position: absolute;
+    width: 100px;
+    left: 111px;
+}
+
+.apagar{
+    position: absolute;
+    width: 207px;
+    right: 75px;
+}
